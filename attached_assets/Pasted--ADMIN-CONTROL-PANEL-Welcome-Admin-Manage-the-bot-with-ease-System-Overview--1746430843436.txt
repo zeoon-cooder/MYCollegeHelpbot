@@ -1,0 +1,70 @@
+🟥🟧🟨🟩 ADMIN CONTROL PANEL 🟩🟨🟧🟥
+Welcome, Admin! Manage the bot with ease.
+
+📊 System Overview
+• Total Users: 1 | Active Subscribers: 0
+• Verified Payments: 0 | Pending Requests: 0
+• Most Accessed Resource: None
+• Time: 2025-05-05 07:36:18
+
+🛠️ Control Menu
+[ Verification Requests ] [ Resource Management ]
+[ User Management ]      [ System Stats ]
+
+ℹ️ Select an option below to proceed.
+Inline Button Layout
+Below the message, add an inline keyboard with buttons:
+
+text
+
+Copy
+[📳 Verification]  [📚 Resources]
+[👤 Users]        [📊 Stats]
+Interaction Flow
+Verification Requests:
+Clicking [📳 Verification] displays:
+text
+
+Copy
+💳 Verification Requests (0)
+No pending requests.
+[Back to Menu]
+If requests exist, list them with buttons like [Approve #ID] or [Reject #ID].
+Resource Management:
+Clicking [📚 Resources] shows:
+text
+
+Copy
+📚 Resource Management
+Total Resources: 0 | Subjects: 0
+[Add Resource] [Edit Resource]
+[Remove Resource] [Delete Subject]
+[Upload JSON] [Back to Menu]
+Each button prompts the admin to input data (e.g., /add_resource opens a guided input process).
+User Management:
+Clicking [👤 Users] displays:
+text
+
+Copy
+👤 User Management
+Total Users: 1 | Active Subscribers: 0
+[Grant Access] [View Stats]
+[Back to Menu]
+[Grant Access] prompts for a Telegram ID, and [View Stats] shows detailed user stats.
+System Stats:
+Clicking [📊 Stats] shows:
+text
+
+Copy
+📊 System Status
+Most Accessed: None
+Verified Payments: 0
+Uptime: 99.9%
+[Back to Menu]
+Implementation Tips
+Platform-Specific Features:
+Telegram: Use InlineKeyboardMarkup for buttons and BotFather to set commands like /start, /menu, /stats.
+Discord: Use Discord’s Button components and slash commands for a similar experience.
+Error Handling: If an admin inputs invalid data (e.g., wrong Telegram ID), respond with a clear error message and a [Try Again] button.
+Security: Restrict access to the admin panel using a whitelist of admin IDs.
+Visuals: Use emojis consistently (e.g., 📳 for verification, 📚 for resources) to make the UI more engaging.
